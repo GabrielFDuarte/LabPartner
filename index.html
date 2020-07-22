@@ -8,7 +8,7 @@
     <meta name="description" content="Ferramenta auxiliar de laboratório e pesquisas." />
     <meta name="author" content="Gabriel Duarte" />
     <title>Lab Partner</title>
-    <link rel="icon" href="images/LabPartnerIcon.png">
+    <link rel="icon" href="images/labPartnerIcon.png">
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         crossorigin="anonymous"></script>
@@ -16,7 +16,8 @@
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand">Lab Partner</a>
+        <a class="navbar-brand"><img src="images/beckerFinal.png" alt="Lab Partner" style="width: 25px;"><span
+                style="vertical-align: middle;padding-left: inherit;">Lab Partner</span></a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
                 class="fas fa-bars"></i></button>
     </nav>
@@ -28,7 +29,9 @@
                         <div class="sb-sidenav-menu-heading">Calculadora</div>
 
                         <div style="margin-left: 15px;margin-right: 15px;">
-                            <button type="button" class="btn btn-primary">Multiplicity of Infection</button>
+                            <button type="button" class="btn btn-primary"
+                                style="background-color: #1E93D2;border-color: #1E93D2;">Multiplicity of
+                                Infection</button>
                         </div>
 
                     </div>
@@ -42,7 +45,7 @@
         <div id="layoutSidenav_content">
             <main id="mainArea">
 
-                <div class="container-fluid" style="margin-top: 1.5rem!important;">
+                <!--<div class="container-fluid" style="margin-top: 1.5rem!important;">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="card">
@@ -56,7 +59,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5>Multiplicidade de Infecção</h5>
-                                    MoI = <input type="text" id="moi" placeholder="Ex.: 1"></input><br><br>
+                                    MOI = <input type="text" id="moi" placeholder="Ex.: 1"></input><br><br>
 
                                     <h5>Células</h5>
                                     Célula = <input type="text" id="celula" placeholder="Ex.: 5"></input>
@@ -76,7 +79,8 @@
                                     <h5>Quantidade de Poços</h5>
                                     Qtd. Poços: <input type="text" id="pocos" placeholder="Ex.: 96"></input><br><br>
 
-                                    <button type="button" class="btn btn-dark" id="sendBtn">Calcular</button><br><br>
+                                    <button type="button" class="btn btn-dark" id="sendBtn"
+                                        style="background-color: #1E93D2;">Calcular</button><br>
                                 </div>
                             </div>
                         </div>
@@ -92,14 +96,16 @@
                                 </div>
                                 <div class="card-body">
                                     <div id="result1"><b>Vírus: </b><span id="virusValue"></span></div>
+                                    <hr>
                                     <div id="result2"><b>Título: </b><span id="titulo1"></span><span
                                             id="titulo2"></span></div>
+                                    <hr>
                                     <div id="result3"><b>Total: </b><span id="total"></span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
             </main>
             <footer class="py-4 bg-light mt-auto">
@@ -107,7 +113,7 @@
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted"></div>
                         <div>
-                            v1.0.0
+                            v1.1.0
                         </div>
                     </div>
                 </div>
@@ -122,13 +128,12 @@
     <script src="js/scripts.js"></script>
 
     <script>
-        /*$(function () {
+        $('#multiplicityButton').on('click', function () {
             $("#mainArea").load("./functions/moiPage.html");
-        });*/
-
+        });
     </script>
 
-    <script>
+    <!--<script>
         $('#sendBtn').on('click', function () {
             let moiValue = $('#moi').val();
             let moiResult = moiValue;
@@ -168,14 +173,14 @@
             }
 
             let totalFinal = tituloResult * $('#pocos').val();
-            
+
             if ((totalFinal * 1000) > 0) {
                 $('#total').text((totalFinal * 1000).toFixed(1) + "μL");
             } else {
                 $('#total').text(totalFinal.toFixed(1) + "mL");
             }
         });
-    </script>
+    </script>-->
 </body>
 
 </html>

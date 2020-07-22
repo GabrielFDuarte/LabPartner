@@ -3,58 +3,108 @@
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
                     </svg>
-                    Multiplicity of Infection (MoI)
+                    Multiplicity of Infection (MOI)
                 </div>
                 <div class="card-body">
                     <h5>Multiplicidade de Infecção</h5>
-                    MoI = <input type="text" id="moi" placeholder="Ex.: 1"></input>
-                    (Expoente, 10^n) n = <input type="text" id="moiExp" placeholder="Ex.: -3"></input><br><br>
+                    MOI = <input type="text" id="moi" placeholder="Ex.: 1"></input><br><br>
 
                     <h5>Células</h5>
                     Célula = <input type="text" id="celula" placeholder="Ex.: 5"></input>
-                    (Expoente, 10^n) n = <input type="text" id="celulaExp" placeholder="Ex.: -3"></input><br><br>
-
+                    (Expoente, 10^n) n = <input type="text" id="celulaExp"
+                        placeholder="Ex.: -3"></input><br><br>
 
                     <hr>
 
                     <h5>Título Viral</h5>
-                    Quantidade de vírus (10^n) n = <input type="text" id="tituloA" placeholder="Ex.: 10^n"></input>
+                    Quantidade de vírus (10^n) n = <input type="text" id="tituloA"
+                        placeholder="Ex.: 10^n"></input>
                     por <input type="text" id="tituloB" placeholder="Concentração - Ex.: 1"></input>
                     (mL)<br><br>
-
 
                     <hr>
 
                     <h5>Quantidade de Poços</h5>
                     Qtd. Poços: <input type="text" id="pocos" placeholder="Ex.: 96"></input><br><br>
 
-
-                    <button type="button" class="btn btn-dark" id="sendBtn">Calcular</button><br><br>
+                    <button type="button" class="btn btn-dark" id="sendBtn"
+                        style="background-color: #1E93D2;">Calcular</button><br>
                 </div>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
                     </svg>
-                    Multiplicity of Infection (MoI) - Resultados
+                    Multiplicity of Infection (MOI) - Resultados
                 </div>
                 <div class="card-body">
-                    <div id="result1"><b>Vírus: </b><span id="virusValue">0</span></div>
-                    <div id="result2"><b>Título: </b><span id="titulo1"></span> - <span id="titulo2"></span>mL por poço
-                    </div>
-                    <div id="result3"><b>Total: </b><span id="total">0</span></div><br>
+                    <div id="result1"><b>Vírus: </b><span id="virusValue"></span></div>
+                    <hr>
+                    <div id="result2"><b>Título: </b><span id="titulo1"></span><span
+                            id="titulo2"></span></div>
+                    <hr>
+                    <div id="result3"><b>Total: </b><span id="total"></span></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $('#sendBtn').on('click', function () {
+        let moiValue = $('#moi').val();
+        let moiResult = moiValue;
+
+        let cellValue = $('#celula').val();
+        let cellExp = $('#celulaExp').val();
+        let cellResult = cellValue * (Math.pow(10, cellExp));
+
+        let count = 0;
+        let parcial = (moiResult * cellResult);
+        while ((parcial / 10) >= 1) {
+            count++;
+            parcial /= 10;
+        }
+
+        let virusResult = moiResult * cellResult;
+
+        if (count == 0) {
+            $('#virusValue').text(parcial);
+            $('#titulo1').text(parcial);
+        } else {
+            $('#virusValue').text(parcial + "x10^" + count);
+            $('#titulo1').text(parcial + "x10^" + count);
+        }
+
+        let r1 = Math.pow(10, $('#tituloA').val());
+
+        let r2 = $('#tituloB').val();
+
+        let r3 = virusResult;
+
+        let tituloResult = ((r2 * r3) / r1);
+        if ((tituloResult * 1000) > 0) {
+            $('#titulo2').text(" - " + (tituloResult * 1000) + "μL por poço");
+        } else {
+            $('#titulo2').text(" - " + tituloResult + "mL por poço");
+        }
+
+        let totalFinal = tituloResult * $('#pocos').val();
+
+        if ((totalFinal * 1000) > 0) {
+            $('#total').text((totalFinal * 1000).toFixed(1) + "μL");
+        } else {
+            $('#total').text(totalFinal.toFixed(1) + "mL");
+        }
+    });
+</script>
