@@ -27,4 +27,4 @@ Veja também a lista de [contribuidores](https://github.com/your/project/contrib
 
 ## License
 
-Este projeto é licenciado sob a GPL-3.0 License - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Este projeto é licenciado sob a GPL-3.0 License - veja o arquivo [LICENSE](https://github.com/GabrielFDuarte/LabPartner/blob/master/LICENSE) para mais detalhes.

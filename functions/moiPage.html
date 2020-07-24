@@ -12,25 +12,26 @@
                 </div>
                 <div class="card-body">
                     <h5>Multiplicidade de Infecção</h5>
-                    MOI = <input type="text" id="moi" placeholder="Ex.: 1"></input><br><br>
+                    MOI = <input type="number" id="moi" placeholder="Ex.: 0.5"></input><br><br>
 
                     <h5>Células</h5>
-                    Célula = <input type="text" id="celula" placeholder="Ex.: 5"></input>
-                    (Expoente, 10^n) n = <input type="text" id="celulaExp"
-                        placeholder="Ex.: -3"></input><br><br>
+                    Célula = <input type="number" id="celula" placeholder="Ex.: 5"></input>
+                    x <input type="number" id="celulaExp"
+                        placeholder="Ex.: 10^n"></input><br><br>
 
                     <hr>
 
                     <h5>Título Viral</h5>
-                    Quantidade de vírus (10^n) n = <input type="text" id="tituloA"
-                        placeholder="Ex.: 10^n"></input>
-                    por <input type="text" id="tituloB" placeholder="Concentração - Ex.: 1"></input>
+                    Quantidade de vírus = <input type="number" id="tituloNumber" placeholder="Ex.: 2" value="1"> x
+                    <input type="number" id="tituloA"
+                        placeholder="Ex.: 10^n"></input><br>
+                    por <input type="number" id="tituloB" placeholder="Concentração - Ex.: 1"></input>
                     (mL)<br><br>
 
                     <hr>
 
                     <h5>Quantidade de Poços</h5>
-                    Qtd. Poços: <input type="text" id="pocos" placeholder="Ex.: 96"></input><br><br>
+                    Qtd. Poços: <input type="number" id="pocos" placeholder="Ex.: 96" value="96" min="1"></input><br><br>
 
                     <button type="button" class="btn btn-dark" id="sendBtn"
                         style="background-color: #1E93D2;">Calcular</button><br>
@@ -54,6 +55,11 @@
                             id="titulo2"></span></div>
                     <hr>
                     <div id="result3"><b>Total: </b><span id="total"></span></div>
+                    <hr>
+                    <b>Informações</b><br>
+                    <ul>
+                        <li>Números devem ser digitados com . para indicar casas decimais, e não vírgula. Exemplo: 0.5.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -86,7 +92,7 @@
             $('#titulo1').text(parcial + "x10^" + count);
         }
 
-        let r1 = Math.pow(10, $('#tituloA').val());
+        let r1 = $('#tituloNumber') * Math.pow(10, $('#tituloA').val());
 
         let r2 = $('#tituloB').val();
 
