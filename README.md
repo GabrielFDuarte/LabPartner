@@ -23,7 +23,7 @@ Para versões disponíveis, veja [as tags do repositório](https://github.com/Ga
 * **Gabriel Duarte** - *Trabalho Inicial* - [GitHub](https://github.com/GabrielFDuarte)
 * **Aline Silva** - *Trabalho Inicial* - [Lattes](http://lattes.cnpq.br/0513423968343528)
 
-Veja também a lista de [contribuidores](https://github.com/your/project/contributors) who participated in this project.
+Veja também a lista de [contribuidores](https://github.com/your/project/contributors).
 
 ## License
 
