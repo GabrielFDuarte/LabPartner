@@ -23,8 +23,6 @@ Para versões disponíveis, veja [as tags do repositório](https://github.com/Ga
 * **Gabriel Duarte** - *Trabalho Inicial* - [GitHub](https://github.com/GabrielFDuarte)
 * **Aline Silva** - *Trabalho Inicial* - [Lattes](http://lattes.cnpq.br/0513423968343528)
 
-Veja também a lista de [contribuidores](https://github.com/your/project/contributors).
-
 ## License
 
 Este projeto é licenciado sob a GPL-3.0 License - veja o arquivo [LICENSE](https://github.com/GabrielFDuarte/LabPartner/blob/master/LICENSE) para mais detalhes.
